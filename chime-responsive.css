@@ -1,0 +1,113 @@
+*{
+size: 2em;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+
+}
+
+div.RoomRosterContainer {
+    transition: all 1s ease;
+}
+
+aside.Sidebar {
+      transition: all 1s ease;
+}
+.PresenceAndName__text {
+    transition: all 1s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+    div.RoomRosterContainer {
+        display:none !important;
+    }
+    
+    aside.Sidebar {
+        min-width: auto;
+        max-width: 200px;
+    }
+    .ChatContainer__top svg{
+        display:none;
+    }
+    
+    input.Input{
+        width:10em;
+    }
+}
+@media only screen and (max-width: 700px) {
+    div.RoomRosterContainer {
+        display:none !important;
+    }
+    .Sidebar__homeLink{
+        visibility:hidden;
+    }
+    .AppMenuContainer__target{
+        padding-left: 0;
+    }
+    .PresenceAndName__text{
+        visibility:hidden;
+    }
+    
+    .RoomListItem__link:focus{
+        border: none;
+    }
+    aside.Sidebar {
+        max-width: 2em ;
+        min-width: auto;
+      
+    }
+    .ChatContainer__top{
+        display:none;
+    }
+    .ConversationListItem__link{
+        padding-left:0;
+    }
+   
+    aside.Sidebar:hover{
+        max-width: 13em;
+    }
+    aside.Sidebar:hover .PresenceAndName__text{
+        visibility:visible;
+    }
+    .ChatHeader{
+        display:none;
+    }
+    aside.Sidebar:hover .ChatHeader{
+        visibility:visible;
+    }
+    .JoinableMeetingsList{
+        visibility:hidden;
+    }
+    aside.Sidebar:hover .JoinableMeetingsList{
+        visibility:visible;
+    }
+    .RoomList{
+        visibility:hidden;
+    }
+    aside.Sidebar:hover .RoomList{
+        visibility:visible;
+    }
+    .SidebarHeader__text{
+        visibility:hidden;
+    }
+    aside.Sidebar:hover .SidebarHeader__text{
+        visibility:visible;
+    }
+}
