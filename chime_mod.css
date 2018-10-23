@@ -139,7 +139,12 @@ aside.Sidebar {
     aside.Sidebar:hover .SidebarHeader__text{
         visibility:visible;
 }
-
+  @media only screen and (max-width: 650px) {
+        .ChatMessage__right.ChatMessage__nonSelectableText{
+            display:none;
+            size: 1.5em;
+        }
+    }
 }
 /*FONT*/
 /* vietnamese */
